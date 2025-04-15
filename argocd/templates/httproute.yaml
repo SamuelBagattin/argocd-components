@@ -7,8 +7,6 @@ spec:
   parentRefs:
   - name: envoy-gateway
     namespace: gateway
-  hostnames:
-  - "argocd.example.com"
   rules:
   - backendRefs:
     - name: argocd-server
