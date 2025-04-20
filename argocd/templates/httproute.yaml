@@ -6,7 +6,7 @@ metadata:
 spec:
   parentRefs:
   - name: envoy-gateway
-    namespace: gateway
+    namespace: envoy-gateway
   rules:
   - matches:
     - path:
