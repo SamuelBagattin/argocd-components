@@ -8,6 +8,10 @@ spec:
   - name: envoy-gateway
     namespace: gateway
   rules:
-  - backendRefs:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
     - name: argocd-server
       port: 80
